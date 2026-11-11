@@ -1,112 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Heller</title>
+    <meta name="theme-color" content="#11120f">
+    <meta name="description" content="Das Portfolio von Thomas Heller und Team – zwei Perspektiven, gemeinsame digitale Ideen.">
+    <title>Thomas Heller & Team — Digitales mit Charakter</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
     <header class="site-header">
-        <nav class="nav container">
-            <div class="brand">Portfolio</div>
-            <div class="nav-links">
-                <a href="#about">Über mich</a>
-                <a href="#projects">Projekte</a>
-                <a href="#contact">Kontakt</a>
+        <nav class="nav container" aria-label="Hauptnavigation">
+            <a class="brand" href="#start" aria-label="Zwei – Team-Portfolio">ZWEI<span>°</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                <span class="menu-toggle-label">Menü</span>
+                <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#team">Team <span>01</span></a>
+                <a href="#projects">Projekte <span>02</span></a>
+                <a class="nav-contact" href="#outlook">Ausblick <span aria-hidden="true">↗</span></a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero container">
-            <div class="hero-text">
-                <p class="eyebrow">Hello, ich bin</p>
-                <h1>Thomas Heller</h1>
-                <p class="lead">Azubi & Web Enthusiast</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#projects">Meine Projekte</a>
-                    <a class="btn btn-secondary" href="#contact">Kontaktiere mich</a>
+        <section class="hero container" id="start">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> ZWEI KÖPFE · EIN TEAM</p>
+                <h1>Zwei Köpfe.<br>Eine <span class="outlined">Idee</span><span class="hero-period">.</span></h1>
+                <div class="hero-bottom">
+                    <p class="hero-intro">Wir sind <strong>Thomas &amp; Team</strong>.<br>Zwei Perspektiven, ein gemeinsamer Anspruch an digitale Arbeit.</p>
+                    <a class="round-link" href="#projects" aria-label="Projekte entdecken">↓</a>
                 </div>
             </div>
-
-            <img class="profile-image" src="img/Bild_Steckbrief_Zuschnitt.jpg" alt="Profile Image">
+            <div class="hero-visual">
+                <div class="visual-sticker" aria-hidden="true"><span>BETTER<br>TOGETHER</span><b>✳</b></div>
+                <div class="hero-people">
+                    <div class="image-frame hero-person hero-person-thomas">
+                        <img src="img/Bild_Steckbrief_Zuschnitt.jpg" alt="Thomas Heller vor einem Rosenhintergrund">
+                        <span class="image-caption">THOMAS HELLER <span>01</span></span>
+                    </div>
+                    <div class="hero-person hero-person-placeholder" aria-label="Zweites Teammitglied – Platzhalter">
+                        <span class="hero-placeholder-mark" aria-hidden="true">P2<span>+</span></span>
+                        <span class="hero-placeholder-note">HIER KOMMT<br>PERSON ZWEI</span>
+                        <span class="image-caption">TEAMMATE <span>02</span></span>
+                    </div>
+                </div>
+                <span class="visual-note">Zwei Blickwinkel<br><span>eine gemeinsame Richtung ↘</span></span>
+            </div>
+            <div class="hero-index" aria-hidden="true"><span>01</span> / 04</div>
         </section>
 
-        <section id="about" class="section container">
-            <div class="section-heading">
-                <p class="eyebrow">Über mich</p>
-                <h2>Wer ich bin</h2>
+        <div class="ticker" aria-label="Zusammenarbeit · Web · Design · Ideen · Teamwork">
+            <div class="ticker-track" aria-hidden="true">
+                <div class="ticker-group">
+                    <span>ZUSAMMENARBEIT</span><i>✳</i><span>WEB</span><i>✳</i><span>DESIGN</span><i>✳</i><span>IDEEN</span><i>✳</i><span>TEAMWORK</span><i>✳</i>
+                </div>
+                <div class="ticker-group" aria-hidden="true">
+                    <span>ZUSAMMENARBEIT</span><i>✳</i><span>WEB</span><i>✳</i><span>DESIGN</span><i>✳</i><span>IDEEN</span><i>✳</i><span>TEAMWORK</span><i>✳</i>
+                </div>
             </div>
+        </div>
 
-            <div class="about-box">
-                <p>Ich bin ein Azubi mit Interesse an Design, Webentwicklung und digitalen Projekten. Ich liebe es, saubere und moderne Websites zu erstellen, die sowohl gut aussehen als auch gut funktionieren.</p>
+        <section class="team section container" id="team">
+            <div class="section-kicker"><span>01 — UNSER TEAM</span><span>ZWEI PERSPEKTIVEN ↘</span></div>
+            <div class="team-heading">
+                <h2>Zusammen wird<br>mehr <span>draus.</span></h2>
+                <p>Unterschiedliche Stärken, ein gemeinsamer Anspruch. Das zweite Profil ist derzeit als Platzhalter angelegt.</p>
             </div>
-        </section>
-
-
-            <div class="section-heading selection container">
-                <p class="eyebrow">Ausbildung</p>
-                <h2>Meine Qualifikationen</h2>
-            </div>
-
-            <div class="degrees-grid selection container">
-                <article class="degrees-card">
-                    <h3>Webentwicklung</h3>
-                    <p>Abschluss: Fachinformatiker für Anwendungsentwicklung (IHK)</p>
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="team-portrait thomas-portrait">
+                        <img src="img/Bild_Steckbrief_Zuschnitt.jpg" alt="Thomas Heller">
+                        <span class="portrait-index">01 / 02</span>
+                    </div>
+                    <div class="team-card-info">
+                        <div><p class="team-role">WEB · IDEEN</p><h3>Thomas Heller</h3></div>
+                        <span class="team-mark" aria-hidden="true">TH</span>
+                    </div>
+                    <p class="team-bio">Fokus auf Webentwicklung, digitale Gestaltung und durchdachte Nutzererlebnisse.</p>
                 </article>
-
-                <article class="degrees-card">
-                    <h3>Design</h3>
-                    <p>Abschluss: Grafikdesign (Berufsschule)</p>
+                <article class="team-card">
+                    <div class="team-portrait partner-portrait" aria-label="Grafische Platzhalterdarstellung für die zweite Person">
+                        <span class="partner-graphic" aria-hidden="true">P2</span>
+                        <span class="placeholder-label">PLATZHALTER<br>FOTO / PERSON</span>
+                        <span class="portrait-index">02 / 02</span>
+                    </div>
+                    <div class="team-card-info">
+                        <div><p class="team-role">STÄRKE · PLATZHALTER</p><h3>Person Zwei</h3></div>
+                        <span class="team-mark" aria-hidden="true">P2</span>
+                    </div>
+                    <p class="team-bio">Hier kommen Name, Rolle und eine kurze Vorstellung der zweiten Person ins Team.</p>
                 </article>
-
-                <article class="degrees-card">
-                    <h3>IT-Grundlagen</h3>
-                    <p>Abschluss: IT-Systemelektroniker (IHK)</p>
-                </article>
-            </div>
-
-        <section id="projects" class="section container">
-            <div class="section-heading">
-                <p class="eyebrow">Projekte</p>
-                <h2>Meine Arbeit</h2>
-            </div>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>Portfolio</h3>
-                    <p>Eine moderne persönliche Webseite mit sauberem Layout und klaren Inhalten.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Web Design</h3>
-                    <p>Gestaltung von visual ansprechenden Webseiten mit Fokus auf User Experience.</p>
-                </article>
-
-                <article class="project-card">
-                    <h3>Creative Ideas</h3>
-                    <p>Entwicklung von digitalen Konzepten mit klarer Struktur und starker Ästhetik.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="section container contact-section">
-            <div class="section-heading">
-                <p class="eyebrow">Kontakt</p>
-                <h2>Lass uns quatschen</h2>
-            </div>
-
-            <div class="contact-box">
-                <p>Email: thomas.heller@example.com</p>
-                <p>Instagram: @thomasheller</p>
             </div>
         </section>
 
-        <section id="other" class="section container footer-section">
-            <p>&copy; 2026 Thomas Heller. Alle Rechte vorbehalten.</p>
+        <section class="about section container" id="about">
+            <div class="section-kicker"><span>02 — ZUSAMMENARBEIT</span><span>IDEEN GEMEINSAM UMSETZEN ↘</span></div>
+            <div class="about-layout">
+                <h2>Digitale Ideen.<br>Klar <span>umgesetzt.</span></h2>
+                <div class="about-copy">
+                    <p class="about-lead">Wir verbinden Konzeption, Gestaltung und Umsetzung zu digitalen Erlebnissen mit klarer Idee und eigenständigem Charakter.</p>
+                    <p>Thomas' Schwerpunkt liegt auf Webentwicklung und digitaler Gestaltung. Das zweite Teamprofil ist noch ein Platzhalter und wird ergänzt, sobald Name und Fachgebiet feststehen.</p>
+                    <a class="text-link" href="#projects">UNSERE ARBEIT ENTDECKEN <span>↘</span></a>
+                </div>
+            </div>
+            <div class="skills-row" aria-label="Interessensgebiete">
+                <span>UNSERE SCHWERPUNKTE</span>
+                <span class="skill-pill">Webentwicklung <b>↗</b></span>
+                <span class="skill-pill">Digitale Ideen <b>↗</b></span>
+                <span class="skill-pill">Zusammenarbeit <b>↗</b></span>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-kicker"><span>03 — AUSGEWÄHLTE ARBEITEN</span><span>GEDANKEN WERDEN DINGE ↘</span></div>
+                <div class="projects-heading">
+                    <h2>Digitale Arbeit.<br><span>Klarer Anspruch.</span></h2>
+                    <p>Einblicke in unsere Arbeit: Web, Gestaltung und digitale Konzepte mit eigenständigem Charakter.</p>
+                </div>
+                <div class="project-filters" role="group" aria-label="Projekte filtern">
+                    <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Alles <span>03</span></button>
+                    <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web <span>01</span></button>
+                    <button class="filter-button" type="button" data-filter="design" aria-pressed="false">Design <span>01</span></button>
+                    <button class="filter-button" type="button" data-filter="ideen" aria-pressed="false">Ideen <span>01</span></button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card project-card-featured" data-category="web">
+                        <button class="project-open" type="button"
+                            data-title="Portfolio"
+                            data-description="Eine persönliche Website, die unsere gemeinsame Arbeit und gestalterische Ausrichtung sichtbar macht."
+                            data-type="Web · Persönliches Projekt">
+                            <span class="project-art art-portfolio" aria-hidden="true">
+                                <span class="art-window"><i></i><i></i><i></i><b>TH.</b><em>PORT<br>FOLIO</em></span>
+                                <span class="art-spark">✳</span>
+                            </span>
+                            <span class="project-meta"><span>01 / WEB</span><span>↗</span></span>
+                            <span class="project-title">Portfolio<span>↗</span></span>
+                            <span class="project-description">Mein Platz im Web – persönlich, direkt und in Bewegung.</span>
+                        </button>
+                    </article>
+                    <article class="project-card" data-category="design">
+                        <button class="project-open" type="button"
+                            data-title="Web Design"
+                            data-description="Ein gestalterischer Ansatz, bei dem Typografie, Farbe und Layout zu einer klaren, eigenständigen digitalen Oberfläche zusammenspielen."
+                            data-type="Design · Gestaltung">
+                            <span class="project-art art-design" aria-hidden="true">
+                                <span class="design-type">Aa</span><span class="design-orbit"></span><span class="design-chip">TYPE<br>STUDY 01</span>
+                            </span>
+                            <span class="project-meta"><span>02 / DESIGN</span><span>↗</span></span>
+                            <span class="project-title">Web Design<span>↗</span></span>
+                            <span class="project-description">Typo, Farbe und die Details dazwischen.</span>
+                        </button>
+                    </article>
+                    <article class="project-card" data-category="ideen">
+                        <button class="project-open" type="button"
+                            data-title="Creative Ideas"
+                            data-description="Digitale Konzepte, die klare Struktur und eigenständige Gestaltung verbinden. Dieses Feld zeigt einen Platzhalter für kommende gemeinsame Arbeiten."
+                            data-type="Konzept · Platzhalter">
+                            <span class="project-art art-ideas" aria-hidden="true">
+                                <span class="idea-orb"></span><span class="idea-star">✳</span><span class="idea-note">WHAT<br>IF<span>?</span></span>
+                                <span class="idea-scribble">keep exploring</span>
+                            </span>
+                            <span class="project-meta"><span>03 / IDEEN</span><span>↗</span></span>
+                            <span class="project-title">Creative Ideas<span>↗</span></span>
+                            <span class="project-description">Gedanken, Experimente und der nächste Anfang.</span>
+                        </button>
+                    </article>
+                </div>
+                <p class="filter-empty" hidden>Hier gibt es gerade nichts zu sehen.</p>
+            </div>
+        </section>
+
+        <section class="contact section container" id="outlook">
+            <div class="section-kicker"><span>04 — AUSBLICK</span><span>IMMER WEITER ENTDECKEN ↘</span></div>
+            <div class="contact-content">
+                <p class="eyebrow">Zwei Perspektiven. Ein Team.</p>
+                <h2>Gemeinsam<br><span>gestalten.</span></h2>
+                <p>Wir verbinden unsere Stärken zu digitalen Arbeiten mit klarer Gestaltung und durchdachter Umsetzung.</p>
+            </div>
+            <div class="contact-foot"><span>THOMAS HELLER &amp; TEAM · 2026</span><a href="#start">ZURÜCK NACH OBEN ↑</a></div>
         </section>
     </main>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+        <button class="dialog-close" type="button" aria-label="Details schließen">×</button>
+        <p class="eyebrow dialog-type"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-description"></p>
+        <button class="dialog-done" type="button">ALLES KLAR <span>↗</span></button>
+    </dialog>
 </body>
 </html>
