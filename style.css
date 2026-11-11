@@ -193,10 +193,21 @@ img { display: block; max-width: 100%; }
 .filter-empty { margin: 30px 0 0; color: var(--muted); }
 
 .contact { padding-bottom: 35px; }
-.contact-content { max-width: 730px; padding-block: 92px 110px; }
+.contact-content { max-width: 760px; padding-block: 92px 90px; }
 .contact-content .eyebrow { color: var(--lime); }
 .contact h2 { font-size: clamp(4.5rem, 10vw, 9rem); }
-.contact-content > p:not(.eyebrow) { max-width: 370px; margin: 28px 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.contact-content > p:not(.eyebrow) { max-width: 420px; margin: 28px 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.contact-actions { display: grid; max-width: 620px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 40px; }
+.contact-button { display: flex; min-width: 0; align-items: center; gap: 14px; padding: 18px; border: 1px solid var(--line); background: var(--panel); color: var(--text); text-decoration: none; transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+.contact-button:hover { transform: translateY(-3px); border-color: var(--lime); }
+.contact-button-primary { border-color: var(--lime); background: var(--lime); color: var(--bg); }
+.contact-button-primary:hover { background: transparent; color: var(--lime); }
+.contact-button-icon { display: grid; width: 40px; height: 40px; flex: 0 0 auto; place-items: center; padding: 0; border: 1px solid currentColor; border-radius: 50%; font-size: 18px; line-height: 1; text-align: center; }
+.contact-button-primary .contact-button-icon { padding-bottom: 2px; }
+.contact-button-copy { display: grid; min-width: 0; gap: 6px; }
+.contact-button-copy small { font: 9px var(--mono); letter-spacing: .1em; opacity: .75; }
+.contact-button-copy strong { overflow-wrap: anywhere; font-size: clamp(11px, 1.2vw, 14px); font-weight: 500; }
+.contact-button-arrow { margin-left: auto; align-self: flex-start; font-size: 15px; }
 .contact-foot { display: flex; justify-content: space-between; padding-block: 20px 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: 9px; letter-spacing: .08em; }
 .contact-foot a { text-decoration: none; }
 .contact-foot a:hover { color: var(--lime); }
@@ -315,9 +326,11 @@ img { display: block; max-width: 100%; }
     .idea-note { font-size: 4rem; }
     .project-title { font-size: 21px; }
     .project-title span { opacity: 1; transform: none; }
-    .contact-content { padding-block: 60px 75px; }
+    .contact-content { padding-block: 60px 55px; }
     .contact h2 { font-size: clamp(4.4rem, 19vw, 7rem); }
     .contact-content > p:not(.eyebrow) { font-size: 13px; }
+    .contact-actions { grid-template-columns: 1fr; gap: 10px; margin-top: 30px; }
+    .contact-button-copy strong { font-size: 14px; }
     .contact-foot { font-size: 8px; }
 }
 
